@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yuehu Wu | wyh10248</title>
+    <title>Yuehu Wu | Academic Homepage</title>
     <meta
       name="description"
-      content="Yuehu Wu 的个人学术主页，展示研究方向、论文成果、教育经历和公开项目。"
+      content="Yuehu Wu 的个人学术主页，展示个人介绍、研究兴趣、教育经历和论文成果。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -17,22 +17,23 @@
         <span>Yuehu Wu</span>
       </a>
       <nav>
-        <a href="#about">简介</a>
+        <a href="#about">介绍</a>
+        <a href="#research">研究兴趣</a>
+        <a href="#education">教育经历</a>
         <a href="#publications">成果</a>
-        <a href="#projects">项目</a>
         <a href="#contact">联系</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero" id="about" aria-labelledby="hero-title">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">Academic Homepage</p>
           <h1 id="hero-title">Yuehu Wu</h1>
           <p class="lead">
-            关注生物信息学、图神经网络、异构图表示学习和复杂生物关联预测。研究工作主要围绕
-            lncRNA-disease association、microbe-disease association、gene regulatory network
-            inference 以及多源生物医学数据建模展开。
+            I am interested in bioinformatics, graph learning, and computational methods for biomedical
+            association prediction. My work focuses on learning robust representations from heterogeneous
+            biological networks and multi-source biomedical data.
           </p>
           <div class="actions" aria-label="个人链接">
             <a class="button primary" href="https://orcid.org/0009-0009-3177-8564">ORCID</a>
@@ -52,34 +53,102 @@
             <span>School of Computer Science and Technology</span>
           </div>
           <div class="profile-card">
-            <span class="label">Research Keywords</span>
-            <span>Graph Learning / Bioinformatics / Association Prediction</span>
+            <span class="label">Research Area</span>
+            <span>Bioinformatics / Graph Learning / Biomedical Data Mining</span>
           </div>
         </aside>
       </section>
 
-      <section class="section highlights" aria-label="研究方向">
-        <article>
-          <span class="tile-index">01</span>
-          <h2>Graph Representation Learning</h2>
-          <p>
-            通过图神经网络、图 Transformer、拓扑重构和动态图学习，建模复杂生物实体之间的潜在依赖关系。
-          </p>
-        </article>
-        <article>
-          <span class="tile-index">02</span>
-          <h2>Biomedical Association Prediction</h2>
-          <p>
-            面向 lncRNA-disease、microbe-disease、microbe-drug 等任务，探索多源异构特征的协同表示。
-          </p>
-        </article>
-        <article>
-          <span class="tile-index">03</span>
-          <h2>Single-Cell Data Mining</h2>
-          <p>
-            结合图扩散预训练和动态学习方法，用于 single-cell RNA-seq 数据中的基因调控网络推断。
-          </p>
-        </article>
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">个人介绍</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-card intro-card">
+            <h3>研究简介</h3>
+            <p>
+              我的研究主要围绕生物医学数据中的关联预测问题展开，关注如何利用图神经网络、异构图表示学习、
+              图 Transformer、矩阵分解和多源特征融合方法，刻画复杂生物实体之间的潜在关系。
+            </p>
+            <p>
+              目前的工作涉及 lncRNA-disease association、microbe-disease association、
+              microbe-drug association、gene regulatory network inference 等方向，希望通过可解释、
+              稳健的计算模型为生物医学发现提供方法支持。
+            </p>
+          </article>
+          <article class="about-card">
+            <h3>Academic Focus</h3>
+            <ul class="compact-list">
+              <li>Heterogeneous biological network representation learning</li>
+              <li>Multi-source biomedical feature integration</li>
+              <li>Graph-based association prediction and ranking</li>
+              <li>Single-cell RNA-seq regulatory network inference</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research Interests</p>
+          <h2 id="research-title">研究兴趣</h2>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card">
+            <span class="tile-index">01</span>
+            <h3>Graph Representation Learning</h3>
+            <p>
+              研究图神经网络、图 Transformer、图扩散预训练、动态图学习等方法，用于捕获生物网络中的结构依赖和语义关系。
+            </p>
+          </article>
+          <article class="interest-card">
+            <span class="tile-index">02</span>
+            <h3>Biomedical Association Prediction</h3>
+            <p>
+              面向疾病、lncRNA、microbe、drug 等实体，构建关联预测模型，挖掘潜在候选关系和高可信生物学线索。
+            </p>
+          </article>
+          <article class="interest-card">
+            <span class="tile-index">03</span>
+            <h3>Heterogeneous Data Integration</h3>
+            <p>
+              融合相似性网络、功能注释、拓扑结构和多源特征，提升稀疏场景下模型的表示能力与泛化能力。
+            </p>
+          </article>
+          <article class="interest-card">
+            <span class="tile-index">04</span>
+            <h3>Single-Cell Data Mining</h3>
+            <p>
+              探索 single-cell RNA-seq 数据中的调控信号建模，尤其关注基因调控网络推断和细胞层面的动态关系学习。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="education" aria-labelledby="education-title">
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2 id="education-title">教育经历</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <time datetime="2025">2025 - 2029</time>
+            <div>
+              <h3>China University of Mining and Technology</h3>
+              <p>School of Computer Science and Technology, Xuzhou, Jiangsu, China.</p>
+              <span>Current graduate study in computer science and technology.</span>
+            </div>
+          </article>
+          <article>
+            <time datetime="2022">2022 - 2025</time>
+            <div>
+              <h3>Harbin University of Science and Technology</h3>
+              <p>Harbin, China.</p>
+              <span>Graduate study period listed in ORCID public record.</span>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="section" id="publications" aria-labelledby="publications-title">
@@ -152,64 +221,6 @@
               </a>
             </div>
           </article>
-        </div>
-      </section>
-
-      <section class="section split" aria-labelledby="education-title">
-        <div>
-          <p class="eyebrow">Education</p>
-          <h2 id="education-title">Education</h2>
-        </div>
-        <div class="timeline">
-          <article>
-            <time datetime="2025">2025 - 2029</time>
-            <h3>China University of Mining and Technology</h3>
-            <p>School of Computer Science and Technology, Xuzhou, Jiangsu, China.</p>
-          </article>
-          <article>
-            <time datetime="2022">2022 - 2025</time>
-            <h3>Harbin University of Science and Technology</h3>
-            <p>Harbin, China.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow">GitHub</p>
-          <h2 id="projects-title">Public Projects</h2>
-        </div>
-        <div class="project-grid">
-          <a class="project" href="https://github.com/wyh10248/HGHDA">
-            <span>Jupyter Notebook</span>
-            <h3>HGHDA</h3>
-            <p>Heterogeneous graph learning related project.</p>
-          </a>
-          <a class="project" href="https://github.com/wyh10248/GCNAT">
-            <span>Python</span>
-            <h3>GCNAT</h3>
-            <p>Graph convolution and attention based implementation.</p>
-          </a>
-          <a class="project" href="https://github.com/wyh10248/transformer">
-            <span>Python</span>
-            <h3>transformer</h3>
-            <p>A PyTorch implementation of Transformer models.</p>
-          </a>
-          <a class="project" href="https://github.com/wyh10248/DL-miRNA-disease-association-methods">
-            <span>Collection</span>
-            <h3>DL-miRNA-disease-association-methods</h3>
-            <p>Deep learning methods for miRNA-disease association prediction.</p>
-          </a>
-          <a class="project" href="https://github.com/wyh10248/lncRNA-disease-methods">
-            <span>Collection</span>
-            <h3>lncRNA-disease-methods</h3>
-            <p>Methods and resources for lncRNA-disease association research.</p>
-          </a>
-          <a class="project" href="https://github.com/wyh10248/Variational-Autoencoders-VAE-pyTorch-Mnist">
-            <span>Python</span>
-            <h3>VAE PyTorch MNIST</h3>
-            <p>Variational autoencoder practice project built with PyTorch.</p>
-          </a>
         </div>
       </section>
     </main>
