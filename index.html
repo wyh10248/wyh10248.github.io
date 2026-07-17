@@ -3,103 +3,223 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>wyh10248 | 个人主页</title>
+    <title>Yuehu Wu | wyh10248</title>
     <meta
       name="description"
-      content="wyh10248 的个人主页，用于展示项目、学习记录和博客文章。"
+      content="Yuehu Wu 的个人学术主页，展示研究方向、论文成果、教育经历和公开项目。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header" aria-label="主导航">
       <a class="brand" href="./" aria-label="返回首页">
-        <img src="https://github.com/wyh10248.png" alt="wyh10248 的 GitHub 头像" />
-        <span>wyh10248</span>
+        <img src="https://github.com/wyh10248.png" alt="Yuehu Wu 的 GitHub 头像" />
+        <span>Yuehu Wu</span>
       </a>
       <nav>
+        <a href="#about">简介</a>
+        <a href="#publications">成果</a>
         <a href="#projects">项目</a>
-        <a href="#notes">笔记</a>
         <a href="#contact">联系</a>
       </nav>
     </header>
 
     <main>
-      <section class="intro" aria-labelledby="intro-title">
-        <div class="intro-copy">
-          <p class="eyebrow">GitHub Pages Personal Site</p>
-          <h1 id="intro-title">你好，我是 wyh10248。</h1>
+      <section class="hero" id="about" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Academic Homepage</p>
+          <h1 id="hero-title">Yuehu Wu</h1>
           <p class="lead">
-            这里会放我的个人主页、博客模板、学习记录和项目入口。先把骨架搭好，后面就可以慢慢把内容长出来。
+            关注生物信息学、图神经网络、异构图表示学习和复杂生物关联预测。研究工作主要围绕
+            lncRNA-disease association、microbe-disease association、gene regulatory network
+            inference 以及多源生物医学数据建模展开。
           </p>
-          <div class="actions" aria-label="常用链接">
-            <a class="button primary" href="https://github.com/wyh10248">GitHub</a>
-            <a class="button" href="#notes">查看笔记</a>
+          <div class="actions" aria-label="个人链接">
+            <a class="button primary" href="https://orcid.org/0009-0009-3177-8564">ORCID</a>
+            <a class="button" href="https://github.com/wyh10248">GitHub</a>
+            <a class="button" href="#publications">Publications</a>
           </div>
         </div>
 
-        <aside class="status-panel" aria-label="主页状态">
-          <div>
-            <span class="label">主页地址</span>
-            <strong>wyh10248.github.io</strong>
+        <aside class="profile-panel" aria-label="个人信息">
+          <div class="profile-card">
+            <span class="label">ORCID</span>
+            <a href="https://orcid.org/0009-0009-3177-8564">0009-0009-3177-8564</a>
           </div>
-          <div>
-            <span class="label">当前内容</span>
-            <strong>项目 / 博客 / 学习记录</strong>
+          <div class="profile-card">
+            <span class="label">Current Affiliation</span>
+            <strong>China University of Mining and Technology</strong>
+            <span>School of Computer Science and Technology</span>
           </div>
-          <div>
-            <span class="label">下一步</span>
-            <strong>推送到 GitHub 并开启 Pages</strong>
+          <div class="profile-card">
+            <span class="label">Research Keywords</span>
+            <span>Graph Learning / Bioinformatics / Association Prediction</span>
           </div>
         </aside>
       </section>
 
-      <section class="section" id="projects" aria-labelledby="projects-title">
+      <section class="section highlights" aria-label="研究方向">
+        <article>
+          <span class="tile-index">01</span>
+          <h2>Graph Representation Learning</h2>
+          <p>
+            通过图神经网络、图 Transformer、拓扑重构和动态图学习，建模复杂生物实体之间的潜在依赖关系。
+          </p>
+        </article>
+        <article>
+          <span class="tile-index">02</span>
+          <h2>Biomedical Association Prediction</h2>
+          <p>
+            面向 lncRNA-disease、microbe-disease、microbe-drug 等任务，探索多源异构特征的协同表示。
+          </p>
+        </article>
+        <article>
+          <span class="tile-index">03</span>
+          <h2>Single-Cell Data Mining</h2>
+          <p>
+            结合图扩散预训练和动态学习方法，用于 single-cell RNA-seq 数据中的基因调控网络推断。
+          </p>
+        </article>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publications-title">
         <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2 id="projects-title">项目入口</h2>
+          <p class="eyebrow">Publications</p>
+          <h2 id="publications-title">Selected Works</h2>
         </div>
-        <div class="grid">
-          <article class="tile">
-            <span class="tile-index">01</span>
-            <h3>主页代码仓库</h3>
-            <p>专门存放这个个人主页的 HTML、样式和博客模板。</p>
+
+        <div class="publication-list">
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <h3>
+                PDGAGRN: Graph diffusion pretraining and dynamic graph learning for gene regulatory network
+                inference from single-cell RNA-sequencing data
+              </h3>
+              <p>Expert Systems with Applications, 2026.</p>
+              <a href="https://doi.org/10.1016/j.eswa.2026.133163">doi:10.1016/j.eswa.2026.133163</a>
+            </div>
           </article>
-          <article class="tile">
-            <span class="tile-index">02</span>
-            <h3>学习项目</h3>
-            <p>整理平时练习、课程代码和阶段性作品。</p>
+
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <h3>
+                Enhancing lncRNA-Disease Association Prediction Through Collaborative Representation of
+                Multi-Source Heterogeneous Features
+              </h3>
+              <p>Tsinghua Science and Technology, 2026.</p>
+              <a href="https://doi.org/10.26599/tst.2025.9010072">doi:10.26599/tst.2025.9010072</a>
+            </div>
           </article>
-          <article class="tile">
-            <span class="tile-index">03</span>
-            <h3>博客模板</h3>
-            <p>后续可以接入静态博客生成器，也可以继续保持纯 HTML。</p>
+
+          <article class="publication">
+            <div class="pub-year">2025</div>
+            <div>
+              <h3>
+                A Novel Sparse-Aware Topology Reconstruction and Global Dependency Enhanced Method for
+                Predicting Human Microbe-Disease Associations
+              </h3>
+              <p>IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2025.</p>
+              <a href="https://doi.org/10.1109/BIBM66473.2025.11356151">doi:10.1109/BIBM66473.2025.11356151</a>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2024</div>
+            <div>
+              <h3>
+                A Method of Enhancing Heterogeneous Graph Representation for Predicting the Associations
+                between lncRNAs and Diseases
+              </h3>
+              <p>Current Bioinformatics, 2024.</p>
+              <a href="https://doi.org/10.2174/0115748936324054240903105015">
+                doi:10.2174/0115748936324054240903105015
+              </a>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2024</div>
+            <div>
+              <h3>
+                A Graph Transformer-Based Method for Predicting LncRNA-Disease Associations Using Matrix
+                Factorization and Automatic Meta-Path Generation
+              </h3>
+              <p>Bioinformatics Research and Applications, 2024.</p>
+              <a href="https://doi.org/10.1007/978-981-97-5131-0_16">
+                doi:10.1007/978-981-97-5131-0_16
+              </a>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section notes" id="notes" aria-labelledby="notes-title">
-        <div class="section-heading">
-          <p class="eyebrow">Notes</p>
-          <h2 id="notes-title">最近记录</h2>
+      <section class="section split" aria-labelledby="education-title">
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2 id="education-title">Education</h2>
         </div>
         <div class="timeline">
           <article>
-            <time datetime="2026-07-17">2026-07-17</time>
-            <h3>建立个人主页仓库</h3>
-            <p>仓库名使用 wyh10248.github.io，发布后访问地址就是 GitHub Pages 个人主页。</p>
+            <time datetime="2025">2025 - 2029</time>
+            <h3>China University of Mining and Technology</h3>
+            <p>School of Computer Science and Technology, Xuzhou, Jiangsu, China.</p>
           </article>
           <article>
-            <time datetime="2026-07-17">待补充</time>
-            <h3>准备第一篇博客</h3>
-            <p>可以写学习路线、项目复盘，或者把常用代码片段整理成文章。</p>
+            <time datetime="2022">2022 - 2025</time>
+            <h3>Harbin University of Science and Technology</h3>
+            <p>Harbin, China.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">GitHub</p>
+          <h2 id="projects-title">Public Projects</h2>
+        </div>
+        <div class="project-grid">
+          <a class="project" href="https://github.com/wyh10248/HGHDA">
+            <span>Jupyter Notebook</span>
+            <h3>HGHDA</h3>
+            <p>Heterogeneous graph learning related project.</p>
+          </a>
+          <a class="project" href="https://github.com/wyh10248/GCNAT">
+            <span>Python</span>
+            <h3>GCNAT</h3>
+            <p>Graph convolution and attention based implementation.</p>
+          </a>
+          <a class="project" href="https://github.com/wyh10248/transformer">
+            <span>Python</span>
+            <h3>transformer</h3>
+            <p>A PyTorch implementation of Transformer models.</p>
+          </a>
+          <a class="project" href="https://github.com/wyh10248/DL-miRNA-disease-association-methods">
+            <span>Collection</span>
+            <h3>DL-miRNA-disease-association-methods</h3>
+            <p>Deep learning methods for miRNA-disease association prediction.</p>
+          </a>
+          <a class="project" href="https://github.com/wyh10248/lncRNA-disease-methods">
+            <span>Collection</span>
+            <h3>lncRNA-disease-methods</h3>
+            <p>Methods and resources for lncRNA-disease association research.</p>
+          </a>
+          <a class="project" href="https://github.com/wyh10248/Variational-Autoencoders-VAE-pyTorch-Mnist">
+            <span>Python</span>
+            <h3>VAE PyTorch MNIST</h3>
+            <p>Variational autoencoder practice project built with PyTorch.</p>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer" id="contact">
-      <p>© 2026 wyh10248</p>
-      <a href="https://github.com/wyh10248">github.com/wyh10248</a>
+      <p>© 2026 Yuehu Wu / wyh10248</p>
+      <div>
+        <a href="https://orcid.org/0009-0009-3177-8564">ORCID</a>
+        <a href="https://github.com/wyh10248">GitHub</a>
+      </div>
     </footer>
   </body>
 </html>
